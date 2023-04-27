@@ -1,6 +1,13 @@
-const body = document.body
+import axios from 'axios';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-const h1 = document.createElement('h1')
-h1.innerText = 'Hello Jirengu'
 
-body.appendChild(h1)
+import {createApp} from 'vue'
+
+import * as vue from 'vue'
+
+console.log('axios', axios)
+console.log('vue', vue)
+console.log('react', React)
+console.log('react-dom', ReactDOM)
