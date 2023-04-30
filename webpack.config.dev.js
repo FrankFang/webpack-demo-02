@@ -1,5 +1,12 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: '饥人谷前端体系课 - webpack 专题',
+      template: './src/index.html'
+    })
+  ],
   module: {
     rules: [
       {
