@@ -2,11 +2,13 @@ import './reset.css'
 import './style.css'
 import png from './images/1.png'
 
-const h1 = document.createElement('h1')
-const img = document.createElement('img')
-img.src = png
+const button = document.createElement('button')
+button.innerText = '懒加载'
 
-h1.innerHTML = 'Hello World'
+button.addEventListener('click', () => {
+  import('./a.js').then(({ a }) => {
+    console.log(a)
+  }, () => { })
+})
 
-document.body.appendChild(h1)
-document.body.appendChild(img)
+document.body.appendChild(button)

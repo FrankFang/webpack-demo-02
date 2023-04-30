@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "build": "webpack -c webpack.config.prod.js",
-    "serve": "webpack serve -c webpack.config.dev.js",
+    "dev": "webpack serve -c webpack.config.dev.js",
+    "serve": "npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
