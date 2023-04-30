@@ -1,3 +1,4 @@
+const WebpackBar = require('webpackbar');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -27,9 +28,10 @@ module.exports = {
       chunkFilename: "[id].[contenthash].css",
     }),
     new HtmlWebpackPlugin({
-      title:'饥人谷前端体系课 - webpack 专题',
+      title: '饥人谷前端体系课 - webpack 专题',
       template: './src/index.html'
-    })
+    }),
+    new WebpackBar()
   ],
   module: {
     rules: [
